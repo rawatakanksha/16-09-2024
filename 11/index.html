@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+          /* border-collapse: collapse; */
+        }
+        </style>
+</head>
+<body>
+    <!-- <table style="width: 70%;">
+        <thead>
+            <tr>
+                <th style="width: 30%;">Day</th>
+                <th >
+                    <table>
+                        <tr style="100%" >
+                            <td colspan="">Seminar</td>
+
+
+                        </tr>
+                        <tr>
+                            <table style="width: 50%;">
+                                <tr><td colspan="2">schedule</td></tr>
+                                <tr>
+                                    <th>Begin</th>
+                                    <th>Head</th>
+                                </tr>
+
+                            </table>
+                        </tr>
+                        <tr></tr>
+                    </table>
+                </th>
+            </tr>
+        </thead>
+    </table>  -->
+<!-- <table style="width: 70%;">
+    <thead>
+        <tr>
+            <th scope="col" rowspan="3" > day</th>
+            <th colspan="3" >Seminar</th>
+        </tr>
+    </thead>
+</table> -->
+
+<table style="width: 100%;">
+    <thead>
+        <tr>
+            <th scope="rowgroup" rowspan="5">Day</th>  <!-- This will span 3 rows -->
+            <th colspan="8">Seminar</th>
+                <tr>
+                    <th colspan="2">schedule
+                       
+                        <th scope="row" colspan="2" rowspan="2">Topic</th>
+                    </th>
+                    
+                    
+                </tr>
+                <tr>
+                    <th>Begin</th>
+                    <th>End</th>
+                </tr>
+            </th>    
+        </tr>
+        <!-- <tr>
+            <th colspan="2">schedule
+            <tr >
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+            </th>
+            
+            <th scope="row" colspan="" rowspan="2">Topic</th>
+        </tr> -->
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 p.m.</td>
+            <td colspan="2">Introduction to XML</td>
+        </tr>
+        <tr>
+            <td colspan="2">Validity:DTD and Relax</td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td rowspan="">8:00 a.m.</td>
+            <td rowspan="">11:00 a.m.</td>
+            <td rowspan="2" colspan="2">XPath</td></tr>
+            
+       
+        <tr>
+            <td rowspan="">11:00 a.m.</td>
+            <td rowspan="">2:00 a.m.</td>
+            
+            
+                <!-- <td rowspan="2" colspan="2">h</td> -->
+           
+            
+            <!-- <td rowspan="2" colspan="2">D</td> -->
+            
+           
+        </tr>
+
+        <tr>
+            <td rowspan="2">2:00 p.m.</td>
+            <td rowspan="2">5:00 p.m</td>
+            <td  colspan="2">XSL Transformations</td>
+        
+        
+        </tr>
+<!-- 
+            <tr>
+                <td rowspan="1,5" colspan="2">h</td>
+            </tr> -->
+<tr></tr>
+     <tr>
+        <td>Wed</td>
+        <td>8:00 a.m.</td>
+        <td>12:00 p.m.</td>
+        <td>XSL Formatting Objects</td>
+     </tr>
+        
+
+        
+
+
+
+        <!-- <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">Details 2</td>
+            <td rowspan="2">Details 3</td>
+            <td colspan="2">d</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">Details 2</td>
+            <td rowspan="2">Details 3</td>
+            <td colspan="2">d</td>
+        </tr> -->
+
+
+    </tbody>
+</table>
+
+    
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>#togglePassword {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+      }
+      #password[type="password"] + #eye-icon::after {
+  content: "\f06E"; /* Unicode character for eye icon */
+     }
+     
+     #password[type="text"] + #eye-icon::after {
+  content: "\f070"; /* Unicode character for eye slash */
+     }
+
+      </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <form>
+        <input type="image" src="/10/af.webp" alt="Submit" width="48" height="48"><br><br>
+        <label for="name">Name:</label><br>
+        <input  pattern="[A-Za-z\s]+" title="Please enter alphabets only."required  type="text" placeholder="enter your name" id="i-name" name="name"><br><br>
+        <label for="number">Phone Number:</label><br>
+        <input pattern="^\+[0-9]{2}$" title="Std code"required type="tel"  id="std" name="number" size="2" minlength="3" maxlength="3" placeholder="+91">
+        <input pattern="^[0-9]{10}$" title="Plese enter your phone number"required type="tel" placeholder="Phone number" id="number" name="number"size="8" minlength="10" maxlength="10"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input  type="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+        title="Please enter a valid email address"required placeholder="enter email" id="email" name="email">
+        <!-- <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /> -->
+        <br><br>
+       <label for="password">password:</label><br>
+        <input type="password" placeholder="enter password" id="password" name="password">
+        <!-- <label for="showPassword">Or view as plain text:</label><br> -->
+        <!-- <input type="text" placeholder="Enter password" id="showPassword" name="showPassword">
+        < <input type="checkbox" id="togglePassword" class="toggle-checkbox"> -->
+           
+            <!-- <i  id="togglePassword" class="toggle-checkbox" aria-hidden="true"></i> -->
+        <br><br>
+        <label for="gender">Gender:</label><br>
+        <!-- <input type="radio" id="male" value="gender">Male
+        <input type="radio" id="female" value="gender">Female<br><br> -->
+        <input type="radio" name="gender" value="male"/> Male <br>  
+        <input type="radio" name="gender" value="female"/> Female <br>  
+        <input type="radio" name="gender" value="other"/> Other  <br><br>
+        
+        <label for="favcolor">Select your favorite color:</label>
+       <input type="color" id="favcolor" name="favcolor"><br><br>
+       
+    
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="us">Us</option>
+            <option value="AUS">Australia</option>
+            <option value="AUS">CanadaS</option>
+        </select><br><br>
+        <label for="interest">Country you are interested to wrok from:</label>
+        <select id="interest"  name="interest" multiple size="3">
+            <option value="ind">India</option>
+            <option value="aus">AUS</option>
+            <option value="us">uS</option>
+        </select><br><br>
+         <label for="id">Field of interest:</label><br>
+        <input type="checkbox" id="java" name="java" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="javascript" name="javascript" value="javascript">
+        <label for="no">JavaScript</label><br>
+        <input type="checkbox" id="python" name="python" value="python">
+        <label for="python">Python</label>
+        <br><br>
+        <label for="Experience">Experience:</label>
+        <input type="number" id="Experience" name="Experience" min="0" max="20" step="1" value="0" ><br><br>
+        <label for="myfile">Select a file:</label>
+       <input type="file" id="myfile" name="myfile" accept="application/pdf"><br><br>
+       <label for="range">Rate your exp</label>
+       <input type="range" id="range" name="range" min="0" max="10"><br><br>
+
+        Feedback:<textarea></textarea><br><br>
+        <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch" placeholder="search here"><br><br>
+  <label for="programmingLanguages">Lang:</label>
+  <input type="text" list="programmingLanguages" placeholder="Enter Here" />
+  <datalist id="programmingLanguages">
+      <option value="Objective C">Objective C</option>
+      <option value="C++">C++</option>
+      <option value="C#">C#</option>
+      <option value="Cobol">Cobol</option>
+      <option value="Go">Go</option>
+      <option value="Java">Java</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="PHP">PHP</option>
+      <option value="Pascal">Pascal</option>
+      <option value="Perl">Perl</option>
+      <option value="R">R</option>
+      <option value="Swift">Swift</option>
+  </datalist>
+  <br><br>
+        
+      
+        <input type="submit" value="submit">
+        <input type="reset" value="Reset"><br><br>
+      
+
+
+    </form>
+</body>
+</html>

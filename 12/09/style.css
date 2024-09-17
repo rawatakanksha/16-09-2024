@@ -1,0 +1,89 @@
+*{
+    background-color:antiquewhite;
+    margin: 5px;
+    padding: 5px;
+}
+body{
+   border: 3px solid;
+   border-color: rgb(117, 13, 13);
+   display: flow-root;/* content wtih flow display wont overflow the body */
+}
+
+
+
+nav{
+  
+  display: flex;
+ 
+}
+ul{
+    justify-content: flex-end;
+}
+img{
+    /* float: left; */
+    height: 150px;
+    width: 150px;
+    margin-right:auto;
+    
+    padding: 20px;
+    border: 1px solid;
+   
+}
+
+li{
+     list-style: none;
+     flex-wrap: wrap;
+   text-decoration: none;
+    justify-content: center;
+    text-align: end; */
+    align-items: end
+  
+    
+ }
+
+ .heading3{
+    color: brown;
+    background-color: rgb(180, 144, 144);
+ }
+ 
+ #thead{
+    text-align: justify;
+    color: brown;
+    
+ }
+ /* attribute*/
+a[href]{padding: 0px;
+margin: 0px;
+}
+a:active{
+    background-color: beige;
+}
+a:hover{
+    background-color:rgb(159, 111, 111);
+}
+a:link{
+    color: rgb(223, 114, 114);
+}
+
+#div2{
+    display: flex;
+}
+/* descendent*/
+div section{
+    width: 100%;
+    
+
+}
+/* child*/
+div>section{
+    justify-content: center;
+    align-items: center;
+    border:2px solid ;
+    border-color: rgb(166, 84, 84);
+    
+}
+
+[href="https://www.linkedin.com/in/akanksha-rawat-815bbb217/"]{
+    color: yellowgreen;
+}
+
