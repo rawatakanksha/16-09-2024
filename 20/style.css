@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: cadetblue;
+}
+.mainContainer{
+ 
+    background-color:rgb(129, 155, 156);
+    height: 100vh;
+    width: 100vw;     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.output1{
+    display: none;
+    margin-top: 10px;
+}
+
+.outerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center; 
+z-index: 3;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+/* margin-top: 100px; */
+}
+.box-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color:darkcyan ; */
+    /* width: 300px; */
+    width: 50vw;
+    height: 200px;
+    /* margin: 10px; */
+    /* border: 2px solid black; */
+    font-size: x-large;
+    border-radius: 10px;
+}
+.formElem{
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.myInput{
+    width: 200px; 
+    background-color: transparent;
+    border: none;
+    
+    border:  1px solid black ;
+    height: 30px;
+    margin: 10px;
+}
+.button{
+    cursor: pointer;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    margin-left: 50px;
+    border-radius: 5px;
+    background-color:darkcyan;
+    
+}
+.output1 table{
+            
+    width: 50vw;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+               
+}
+.output1 table {
+    
+  padding: 3px ;  
+}  
+.thead{
+   font-size: x-large;
+}

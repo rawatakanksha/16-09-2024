@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/20/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainContainer">
+    <div class="outerDiv">
+        
+        <div class="box-1">
+            <h2>Input Field</h2><br>
+            <form name="myForm" class="formElem" onsubmit="return validateForm()">
+            <label for="input" >Number:</label>
+            <input name="inputNum" class="myInput" type="number" placeholder="type a number" min="2" max="20" required ><br>
+            <br>
+            <button class="button">Submit</button></form>
+        </div>
+        <div class="output1">
+            <table class="tContent">
+                <thead class="head"></thead>
+                <tbody class="body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+   </div>
+    <script src="/20/index.js"></script>
+
+</body>
+
+</html>
